@@ -6,6 +6,10 @@
 ### 如果你想要使用它就必须进行初始化。(If you want to use it , you must init it like this.)
     Reporter.Init();
 
+### 如何显示调试信息画面？(How to show the debug ui panel)
+    用手指或者鼠标在屏幕上旋转n圈就可以调出调试画面(You need to put your finger on the screen and move around and move around and move around , then it will be show.)
+    为什么是n圈呢？为了排除不是项目中其他操作而误被调的。(Why must to move around so much times? Because it must to sure it is not for other operation.)
+
 扩展功能
 ----------------
 ### 它还可以显示自定义的吊事信息，像玩家Id或名字等。(It have debug information can show in reporter like player Id or player name.)
