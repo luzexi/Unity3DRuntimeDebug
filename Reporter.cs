@@ -9,7 +9,6 @@ using System.Collections.Generic;
 //just draw circle on your game to view all logs
 public class Reporter : MonoBehaviour {
 
-
 	public enum _LogType{
 		Assert 	= LogType.Assert ,
 		Error  	= LogType.Error ,
@@ -209,6 +208,22 @@ public class Reporter : MonoBehaviour {
 	string graphicsMemorySize ;
 	string maxTextureSize ;
 	string systemMemorySize ;
+
+	public static void Init()
+	{
+		GameObject obj = new GameObject("Reporter");
+		obj.AddComponent<ReporterMessageReceiver>();
+		obj.AddComponent<Reporter>();
+	}
+
+	public static void Init<T>()
+		where T : ReporterMessageReceiver
+	{
+		GameObject obj = new GameObject("Reporter");
+		obj.AddComponent<T>();
+		obj.AddComponent<Reporter>();
+	}
+
 	void Awake()
 	{
 		if( !Initialized )
