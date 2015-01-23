@@ -18,4 +18,4 @@
 ### 在ReporterMessageReceiver里，有一个reporter实例引用，你可以使用它来设置调试信息。(In the ReporterMessageReceiver, it have reporter instance. You can use it to set debug information.)
     reporter.UserData = "Put user date here like his account to know which user is playing on this device"
 
-![github](https://github.com/luzexi/Unity3DRuntimeDebug/blob/master/demoImg.png "img")
+![github](https://github.com/luzexi/Unity3DRuntimeDebug/blob/master/demoImg.jpg "img")
