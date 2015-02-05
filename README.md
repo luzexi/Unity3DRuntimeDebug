@@ -12,7 +12,7 @@
 
 扩展功能
 ----------------
-### 它还可以显示自定义的吊事信息，像玩家Id或名字等。(It have debug information can show in reporter like player Id or player name.)
+### 它还可以显示自定义的调试信息，像玩家Id或名字等。(It have debug information can show in reporter like player Id or player name.)
     你需要继承ReporterMessageReceiver，它有4个事件可以重载。(you need inheritance ReporterMessageReceiver. It have 4 events , so if you want to use you can override it.)
     void OnPreStart()
     void OnHideReporter()
