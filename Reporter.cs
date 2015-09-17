@@ -228,6 +228,7 @@ public class Reporter : MonoBehaviour {
 	{
 		if( !Initialized )
 			Initialize();
+		Object.DontDestroyOnLoad(this.gameObject);
 	}
 	
 	void OnEnable()
