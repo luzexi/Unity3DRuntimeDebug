@@ -1789,34 +1789,34 @@ public class Reporter : MonoBehaviour {
 	//read build information 
 	IEnumerator readInfo(  )
 	{
-		string prefFile = "build_info.txt" ;
-		string url = prefFile;
+		// string prefFile = "build_info.txt" ;
+		// string url = prefFile;
 
-        if (prefFile.IndexOf("://") == -1)
-        {
-            string streamingAssetsPath = Application.streamingAssetsPath;
-            if (streamingAssetsPath == "")
-                streamingAssetsPath = Application.dataPath + "/StreamingAssets/";
-            url = System.IO.Path.Combine(streamingAssetsPath, prefFile);
-        }
+  //       if (prefFile.IndexOf("://") == -1)
+  //       {
+  //           string streamingAssetsPath = Application.streamingAssetsPath;
+  //           if (streamingAssetsPath == "")
+  //               streamingAssetsPath = Application.dataPath + "/StreamingAssets/";
+  //           url = System.IO.Path.Combine(streamingAssetsPath, prefFile);
+  //       }
 
-        if (Application.platform != RuntimePlatform.OSXWebPlayer && Application.platform != RuntimePlatform.WindowsWebPlayer)
-            if (!url.Contains("://"))
-                url = "file://" + url;
+  //       if (Application.platform != RuntimePlatform.OSXWebPlayer && Application.platform != RuntimePlatform.WindowsWebPlayer)
+  //           if (!url.Contains("://"))
+  //               url = "file://" + url;
 
 
-       // float startTime = Time.realtimeSinceStartup;
-		WWW www = new WWW( url );
-		yield return www ;
+  //      // float startTime = Time.realtimeSinceStartup;
+		// WWW www = new WWW( url );
+		// yield return www ;
 		
-		if( !string.IsNullOrEmpty( www.error ) )
-		{
-			Debug.LogError( www.error );
-		}
-		else 
-		{
-			buildDate = www.text ;
-		}
+		// if( !string.IsNullOrEmpty( www.error ) )
+		// {
+		// 	Debug.LogError( www.error );
+		// }
+		// else 
+		// {
+		// 	buildDate = www.text ;
+		// }
 		
 		yield break;
 	}
